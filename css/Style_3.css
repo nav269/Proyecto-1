@@ -1,0 +1,104 @@
+body {
+    background-color: #b1e8f86e;
+}
+
+.containeress {
+    margin-top: 20px;
+}
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #bbb;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked~label {
+    color: #f2b600;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: #f2b600;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.card {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-columns {
+    column-count: 2;
+}
+
+.sidebar {
+    background-color: #80c7dd;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    color: white;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+.vote-section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.vote-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.vote-btn i {
+    font-size: 20px;
+    color: #555;
+}
+.vote-count {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #555;
+}

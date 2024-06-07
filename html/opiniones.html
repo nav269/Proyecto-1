@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Opiniones</title>
+
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/brands.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/solid.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/fontawesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/Style_3.css">
+    <link rel="stylesheet" href="./../css/style.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <img src="./../images/logo.png">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#"
+                            id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="accesorio.html">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="Niño.html">Niño</a></li>
+                            <li><a class="dropdown-item" href="Niña.html">Niña</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opiniones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Carrito_de_compras.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                            </svg>
+                        </a>
+                    </li>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="containeress">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <h2>Publica tu reseña...</h2>
+                    <form id="opinionForm">
+                        <div class="form-group">
+                            <label>Su calificación general:</label>
+                            <div class="star-rating">
+                                <input id="star-5" type="radio" name="rating" value="5">
+                                <label for="star-5" title="5 estrellas">&#9733;</label>
+                                <input id="star-4" type="radio" name="rating" value="4">
+                                <label for="star-4" title="4 estrellas">&#9733;</label>
+                                <input id="star-3" type="radio" name="rating" value="3">
+                                <label for="star-3" title="3 estrellas">&#9733;</label>
+                                <input id="star-2" type="radio" name="rating" value="2">
+                                <label for="star-2" title="2 estrellas">&#9733;</label>
+                                <input id="star-1" type="radio" name="rating" value="1">
+                                <label for="star-1" title="1 estrella">&#9733;</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Tu nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Tu correo electronico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu correo electronico"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="opinion">Título y texto de tu reseña</label>
+                            <textarea class="form-control" id="opinion" rows="3" placeholder="Deja un comentario..."
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">Puedes agrgar una foto</label>
+                            <input type="file" class="form-control-file" id="photo" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Publicar</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Seccion de reseñas-->
+            <div class="col-md-8">
+                <h2>Opiniones de los usuarios</h2>
+                <div class="card-columns" id="commentsSection">
+                    <!-- Aqui se agregan las targetas y comentarios de los usuarios -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.com/?hl=es"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.google.com/?hl=es"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="contactosinf">
+            <h2 class="titulo">INFORMACION DE CONTACTO</h2>
+            <p>Direccion Uyustus La Paz, frente a la Galeria San Andres</p>
+            <p>Telf 63277777</p>
+            <p>Email: leidaStore@gmail.com</p>
+            <p>&copy; 2024 Leida Baby Store. Todos los derechos reservados.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-home"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./../js/script_3.js"></script>
+</body>
+
+</html>

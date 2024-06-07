@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styleprod.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title> </title>
+</head>
+
+<body>
+
+  <div class="nav">
+    <img src="../images/logo.png">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#" id="navbarDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="accesorio.html">Accesorios</a></li>
+              <li><a class="dropdown-item" href="Niño.html">Niño</a></li>
+              <li><a class="dropdown-item" href="Niña.html">Niña</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="opiniones.html">Opiniones</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Carrito_de_compras.html" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+            </a>
+          </li>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="item1">
+      <div id="formulario">
+        <h3>Categoria</h3>
+        <label><input type="radio" name="categoria" value="todas"> Todos</label><br>
+        <label><input type="radio" name="categoria" value="c1"> Baberos</label><br>
+        <label><input type="radio" name="categoria" value="c2"> Frazadas</label><br>
+        <label><input type="radio" name="categoria" value="c3"> Toallas</label><br>
+        <label><input type="radio" name="categoria" value="c4"> Cargadores</label><br>
+        <label><input type="radio" name="categoria" value="c5"> Pañaleras</label><br>
+      </div>
+    </div>
+    <div class="item2">
+      <div class="card tar c1">
+        <img src="../images/Accesorios/A1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Baberos <br>Bs. 50</h5>
+          <p class="card-text">Algodon<br>Marca: Carters</p>
+          <button type="button" class="btn btn-primary" onclick="addToCart('Baberos', 50)"> Añadir al carrito </button>
+        </div>
+      </div>
+
+      <div class="card tar c2">
+        <img src="../images/Accesorios/A2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Frazada <br>Bs. 70</h5>
+          <p class="card-text">Frazadas de polar</p>
+          <button type="button" class="btn btn-primary" onclick="addToCart('Frazada', 70)"> Añadir al carrito </button>
+        </div>
+      </div>
+
+      <div class="card tar c3">
+        <img src="../images/Accesorios/A3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Toalla <br>Bs. 55</h5>
+          <p class="card-text">Set de toallas</p>
+          <button type="button" class="btn btn-primary" onclick="addToCart('Toalla', 55)"> Añadir al carrito </button>
+        </div>
+      </div>
+
+      <div class="card tar c4">
+        <img src="../images/Accesorios/A4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cargador <br>Bs. 210</h5>
+          <p class="card-text">Cargador ergonomico<br> de 2 posiciones</p>
+          <button type="button" class="btn btn-primary" onclick="addToCart('Cargador ergonomico', 210)"> Añadir al
+            carrito </button>
+        </div>
+      </div>
+
+      <div class="card tar c4">
+        <img src="../images/Accesorios/A5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fular <br>Bs. 100</h5>
+          <p class="card-text">Fular Disney</p>
+          <button type="button" class="btn btn-primary" onclick="addToCart('Fular', 100)"> Añadir al carrito </button>
+        </div>
+      </div>
+
+      <div class="card tar c5">
+        <img src="../images/Accesorios/A6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pañalera <br>Bs. 200</h5>
+          <p class="card-text">Pañalera tipo maletin</p>
+          <button type="button" class="btn btn-primary" onclick="addToCart('Pañalera', 200)"> Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.google.com/?hl=es"><i class="fa-brands fa-google"></i></a>
+      <a href="https://www.google.com/?hl=es"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <div class="contactosinf">
+      <h2 class="titulo">INFORMACION DE CONTACTO</h2>
+      <p>Direccion Uyustus La Paz, frente a la Galeria San Andres</p>
+      <p>Telf 63277777</p>
+      <p>Email: leidaStore@gmail.com</p>
+      <p>&copy; 2024 Leida Baby Store. Todos los derechos reservados.</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa-solid fa-phone"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+      <a href="#"><i class="fa-solid fa-home"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="../js/categoria.js"></script>
+  <script src="../js/script_C.js"></script>
+</body>
+
+</html>

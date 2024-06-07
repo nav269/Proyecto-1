@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./../css/Style_C.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de compras</h1>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Tus compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Descripción</th>
+                        <th>Precio por unidad</th>
+                        <th>Total</th>
+                        <th>Quitar del carrito</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    <!-- Cart items will be added here dynamically -->
+                </tbody>
+            </table>
+            <p>Total a pagar: <span id="totalMonto">Bs. 0.00</span></p>
+            <button onclick="checkout()">Cerrar</button>
+        </section>
+    </main>
+    <script src="./../js/card.js"></script>
+</body>
+</html>

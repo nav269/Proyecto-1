@@ -1,0 +1,147 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 h2 h3 h4 h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav {
+    background-color: #f7e6bb;
+    justify-content: left;
+    color: black;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.nav-link,
+.navbar-brand,
+.dropdown-item {
+    color: #000 !important;
+    /* Negro */
+    transition: color 0.3s ease;
+    /* Suavizado de transición */
+}
+
+.nav-link:hover,
+.navbar-brand:hover,
+.dropdown-item:hover {
+    color: #FF69B4 !important;
+    /* Color rosa al hacer hover */
+}
+
+.bi-cart-fill {
+    color: #000;
+    /* Negro */
+    transition: color 0.3s ease;
+    /* Suavizado de transición */
+}
+
+.bi-cart-fill:hover {
+    color: #FF69B4;
+    /* Color rosa al hacer hover */
+}
+
+.container {
+    display: flex;
+    height: 500px;
+}
+
+.item1 {
+    background-color: #ffc8f3;
+    padding: 25px;
+    width: 250px;
+}
+
+.item2 {
+    background-color: #b3ec96;
+    flex: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding-left: 50px;
+}
+
+.item2 .tar {
+    margin: 15px;
+}
+
+.tar img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+footer {
+    background: #B9B8C1;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        color: #050404;
+    }
+}
+
+footer.social-icons a img {
+    flex-grow: 1;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-icons a:hover {
+    background: #6d6868;
+}
+
+footer .contactosinf {
+    text-align: center;
+}
+
+
+footer.social a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Cambia el color de los botones */
+.btn-primary {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #555 !important;
+    border-color: #555 !important;
+  }
+  
+
+.contactosinf {
+    h2 {
+        color: #333333;
+        text-align: center;
+    }
+
+    p {
+        color: #333333;
+        text-align: center;
+    }
+}
+
+footer i {
+    padding: 10px;
+}
